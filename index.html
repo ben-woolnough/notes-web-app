@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Notes</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div id="navbar">
+  <span class="navButton" id="collapseButton"><a href="#" onclick="toggleSidebar()">&#9776;</a></span>
+  <span id="logo"><a href="#">Notes</a></span>
+  <span class="searchbar">
+    <form>
+        <input type="text" name="search" placeholder="Search">
+    </form>
+  </span>
+</div> <!-- navbar -->
+
+<div id="sidebar">
+  <ul>
+    <li><a href="#">Notes</a></li>
+    <li><a href="#">Reminders</a></li>
+    <hr>
+    <li><a href="#">Create new label</a></li>
+    <hr>
+    <li><a href="#">Archive</a></li>
+    <li><a href="#">Trash</a></li>
+    <hr>
+    <li><a href="#">Settings</a></li>
+    <li><a href="#">Send feedback</a></li>
+    <li><a href="#">Help</a></li>
+    <li><a href="#">App downloads</a></li>
+    <li><a href="#">Keyboard shortcuts</a></li>
+    <br>
+    <span class="links">
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a><br>
+    <a href="#">Open-source licences</a>
+    </span>
+  </ul>
+</div> <!-- sidebar -->
+
+<div id="main">
+  <div>
+    <button onclick="newNote()">Take a note...</button>
+    <!-- <button onclick="saveNotes()">Save</button> -->
+  </div>
+  <div id="noteContainer">
+<!--       <?php
+        $noteList = array("first message", "second message", "another message");
+        foreach ($noteList as $note) {
+            echo "<div class='note' onclick='editNote(this)'>$note</div>";
+        }
+    ?> -->
+  </div> <!-- noteContainer -->
+</div> <!-- main -->
+
+<div id=textModal>
+  <div class=modalContent>
+    <textarea rows="14" cols="30" id="myTextarea"></textarea><br>
+    <span>
+      <button id="submitButton" onclick="submitChanges()">Submit</button>
+      <button id="deleteButton" onclick="deleteNote()">Delete</button>
+    </span>
+    <div class="closeButton"><a href="#" onclick="closeModal()">x</a></div>
+  </div>
+</div> <!-- textModal -->
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

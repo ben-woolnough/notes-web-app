@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #e3e3e3;
+}
+
+/* NAVBAR */
+
+#navbar {
+  font-size: 18pt;
+  background: #e5c62d; /* top bar colour */
+  padding: 5px;
+}
+
+#navbar span {
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+#logo {
+  font-weight: bold;
+}
+
+span.searchbar {
+  width: 40%;
+}
+
+#navbar input {
+  font-size: 12pt;
+  padding: 15px 0 15px 30px;
+  width: 100%;
+  border-radius: 5px;
+  background: #ccaf1c; /* search bar colour */
+}
+
+#navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+/*SIDEBAR*/
+
+#sidebar {
+  float: left;
+  width: 20%;
+  overflow-x: hidden;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+#sidebar ul {
+  padding: 0 0px;
+  list-style-type: none;
+}
+
+#sidebar ul li a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #444;
+  padding: 10px;
+  white-space: wrap;
+}
+
+#sidebar ul li a:hover {
+  background: #ccc;
+}
+
+.links a {
+  padding: 10px;
+  font-size: 8pt;
+}
+
+/* Main */
+
+#main {
+  margin-left: 20%;
+  padding: 10px;
+  transition: margin-left 0.3s;
+}
+
+#main button {
+  margin: auto;
+  height: 40px;
+  background-color: #ddd;
+  margin-bottom: 50px;
+}
+
+#noteContainer {
+  margin: auto;
+  max-width: 80%;
+}
+
+.note {
+  display: inline-block;
+  background: white;
+  min-width: 180px;
+  padding: 15px;
+  margin: 30px 15px;
+  border-radius: 2px;
+  box-shadow: 1px 1px 5px #888;
+  white-space: pre-wrap;
+  overflow-x: auto;
+  max-width: 220px;
+}
+
+.note:hover {
+  box-shadow: 3px 3px 5px #666;
+}
+
+/* Modal */
+
+#textModal {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modalContent {
+  width: 300px;
+  height: 310px;
+  margin: auto;
+  margin-top: 150px;
+  background: white;
+  border-radius: 20px;
+}
+
+.modalContent textarea, button {
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 40px;
+}
+
+.modalContent button {
+  display: inline;
+  position: relative;
+  left: 70px;
+  margin: 0 10px;
+}
+
+.modalContent .closeButton {
+  font-size: 20pt;
+  font-weight: bold;
+  font-family: Verdana;
+  position: relative;
+  left: 90%;
+  bottom: 80%;
+}
+
+.modalContent .closeButton a {
+  text-decoration: none;
+}
